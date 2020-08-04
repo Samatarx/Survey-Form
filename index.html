@@ -1,0 +1,125 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+  <title>Survey Form</title>
+</head>
+<body>
+  
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Ranchers&display=swap" rel="stylesheet">
+<div class="container">
+  <h1 id="title">Welcome to Good Burger!</h1>
+
+  <p id="description">Home of the Good Burger, can I take your order?</p>
+
+  <form id="survey-form">
+    <div class="forms">
+      <label for="name" id="name-label"> Name</label>
+      <input type="text" 
+             name="name" 
+             id="name" 
+             placeholder="Ed" 
+             class="form-style" 
+             required>
+
+    </div>
+
+    <div class="forms">
+      <label for="email" id="email-label">Email</label>
+
+      <input type="email" 
+             name="email" 
+             id="email" 
+             placeholder="imadude@goodburger.com" 
+             class="form-style" 
+             required>
+
+    </div>
+
+    <div class="forms">
+      <label for="number" id="number-label">How many burgers would you like?</label>
+      <input type="number" 
+             name="number" 
+             id="number" 
+             min="1" max="20" 
+             class="form-style" 
+             placeholder="Maximum of 20 burgers per order">
+
+    </div>
+
+    <div class="forms">
+      <p>Would you like our secret sauce?</p>
+      <input type="radio" name="sauce" id="yes" checked>
+      <label for="yes">Yes</label>
+
+      <input type="radio" name="sauce" id="no">
+      <label for="no">No</label>
+
+    </div>
+
+    <div class="forms">
+      <div class="ingredients">
+        <p>Select burger toppings:</p>
+        <label>
+          <input type="checkbox" 
+                 name="toppings" 
+                 class="toppings" 
+                 value="lettuce">
+          Lettuce</label>
+
+        <label>
+          <input type="checkbox" 
+                 name="toppings" 
+                 class="toppings" 
+                 value="Tomatoes">
+          Tomatoes</label>
+
+        <label>
+          <input type="checkbox" 
+                 name="toppings" 
+                 class="toppings" 
+                 value="onions">
+          Onions</label>
+
+        <label>
+          <input type="checkbox" 
+                 name="toppings" 
+                 class="toppings" 
+                 value="pickles">
+          Pickles</label>
+        <label>
+          <input type="checkbox" 
+                 name="toppings" 
+                 class="toppings" 
+                 value="cheese">
+          Cheese</label>
+      </div>
+    </div>
+
+    <div class="forms">
+      <label for="deops">Delivery Options</label>
+      <select name="deops" id="deops">
+        <option value="home">Home Delivery</option>
+        <option value="collection">Collect in Store</option>
+        <option value="drone">Delivered by drone</option>
+      </select>
+    </div>
+
+    <div class="forms">
+      <p>Additional comments:</p>
+      <textarea id="textarea" 
+                name="comments" 
+                rows="3" cols="40" 
+                placeholder="Extra sauce? Non-plastic straws? More napkins?"></textarea>
+
+    </div>
+
+  </form>
+
+  <div class="submit">
+    <input type="submit" id="submit" value="Submit">
+  </div>
+
+</div>
+
+<!--fin-->
+
+</body>
